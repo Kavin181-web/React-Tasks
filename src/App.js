@@ -50,63 +50,65 @@ function App() {
       {students.map(s => (
         <p key={s.id}>{s.name} - {s.age} - {s.course} - {s.status || "completed"}</p>
       ))}
-      <hr />
+      <hr/>
 
       {/* Q2 */}
       <h2>Q2: Update Ravi Status</h2>
       {updateRavi.map(s => (
         <p key={s.id}>{s.name} - {s.status || "completed"}</p>
       ))}
-      <hr />
+      <hr/>
 
       {/* Q3 */}
       <h2>Q3: Insert Deepak</h2>
       {addDeepak.map(s => (
         <p key={s.id}>{s.name}</p>
       ))}
-      <hr />
+      <hr/>
 
       {/* Q4 */}
       <h2>Q4: Delete Meena</h2>
       {deleteMeena.map(s => (
         <p key={s.id}>{s.name}</p>
       ))}
-      <hr />
+      <hr/>
 
       {/* Q5 */}
       <h2>Q5: Age greater than 21</h2>
       {ageGreater.map(s => (
         <p key={s.id}>{s.name} - {s.age}</p>
       ))}
-      <hr />
+      <hr/>
 
       {/* Q6 */}
       <h2>Q6: Age less than 22</h2>
       {ageLess.map(s => (
         <p key={s.id}>{s.name} - {s.age}</p>
       ))}
-      <hr />
+      <hr/>
 
       {/* Q7 */}
       <h2>Q7: MERN Stack or Python</h2>
       {courseIn.map(s => (
         <p key={s.id}>{s.name} - {s.course}</p>
       ))}
-      <hr />
+      <hr/>
 
       {/* Q8 */}
-      <h2>Q8: Age > 20 and MERN Stack</h2>
+      <h2>Q8: Age &gt; 20 and MERN Stack</h2>
       {andCondition.map(s => (
         <p key={s.id}>{s.name}</p>
       ))}
-      <hr />
+      <hr/>
 
       {/* Q9 */}
       <h2>Q9: Java or Python</h2>
-      {orCondition.map(s => (
-        <p key={s.id}>{s.name} - {s.course}</p>
+      {orCondition.map((s) => (
+        <p key={s.id}>
+          {s.name} - {s.course}
+        </p>
       ))}
-      <hr />
+      <hr/>
 
       {/* Q10 */}
       <h2>Q10: Status exists</h2>
